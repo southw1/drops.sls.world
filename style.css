@@ -1,0 +1,88 @@
+body {
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.tiers {
+    margin: 20px;
+}
+
+.tier-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #222;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.tier-btn.active {
+    background: #00c3ff;
+    box-shadow: 0 0 10px #00c3ff;
+}
+
+.spin-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    height: 140px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #1a1a1a;
+}
+
+.track {
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+.card {
+    width: 140px;
+    height: 120px;
+    margin: 10px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* Tier colors */
+.t0 { border: 2px solid gray; }
+.t1 { border: 2px solid #00c3ff; }
+.t2 { border: 2px solid #00ff88; }
+.t3 { border: 2px solid gold; }
+.t4 { border: 2px solid red; }
+
+/* Center selector */
+.selector {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 140px;
+    border: 3px solid #00c3ff;
+    box-shadow: 0 0 20px #00c3ff;
+    pointer-events: none;
+}
+
+button {
+    padding: 12px 25px;
+    background: #00c3ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
